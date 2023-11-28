@@ -1,0 +1,51 @@
+# REGISTER USER
+# POST http://127.0.0.1:8000/trading-app/user-register
+# Content-Type: application/json
+
+# {"user_name": "admin", "password": "adminaccess"}
+
+# LOGIN USER
+# POST http://127.0.0.1:8000/trading-app/user-login
+# Content-Type: application/json
+
+# {"user_name":"admin", "password":"adminaccess"}
+
+# LOGOUT USER
+# POST http://127.0.0.1:8000/trading-app/user-logout
+# Content-Type: application/json
+# Authorization: 
+
+# GET ALL STOCK
+# GET http://127.0.0.1:8000/trading-app/market-stock
+# Content-Type: application/json
+# Authorization: 
+
+# CREATE STOCK 
+# POST http://127.0.0.1:8000/trading-app/market-stock
+# Content-Type: application/json
+# Authorization: 
+
+# {"stock_name":"item 2", "stock_price":"10", "stock_quantity":"5"}
+
+# GET ALL ORDER
+# GET http://127.0.0.1:8000/trading-app/market-order
+# Content-Type: application/json
+# Authorization: 
+
+# CREATE ORDER
+# POST http://127.0.0.1:8000/trading-app/market-order
+# Content-Type: application/json
+# Authorization: 
+
+# {"quantity_order":3, "market_order":"1"}
+
+# GET PORTFOLIO
+# GET http://127.0.0.1:8000/trading-app/portfolio
+# Content-Type: application/json
+# Authorization: 
+
+
+# Note : -Install Thunder client in vscode to run the api endpoint.
+#        -Create superuser or use registration endpoint.
+#        -Use auto generated token to Authorization space after registration, to test each endpoint
+#        -Endpoint that require's Authorization has TokenAuthentication requirement on the class.
